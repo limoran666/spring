@@ -68,6 +68,12 @@
 发现Autowired标注的自动装配的属性默认是一定装配上的
 找到就装配，找不到就抛错，现在让它找不到就算了
 
+@Autowired,@Resource @Inject都是自动装配的意思
+@Autowired 最强大
+@Resource java自己的依赖注入
+
+@Resource 扩展性强 如果切换成另一个容器框架 @Resource还能用 但是@Autowired就不行
+
     -->
     <context:component-scan base-package="com.morange"></context:component-scan>
     
